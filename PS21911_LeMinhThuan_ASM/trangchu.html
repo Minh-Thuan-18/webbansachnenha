@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<script src="https://uhchat.net/code.php?f=5c6aac"></script>
+
+<body onload="fStart();">
+    <header id="top">
+
+        <div class="thongbao">
+            <p>
+                Sale Off 30%
+            </p>
+        </div>
+        <div class="menu-logo">
+
+            <nav>
+                <label for="toggle-menu" class="btn-toggle-menu">
+                    <i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="toggle-menu">
+                <ul class="menu">
+                   <li><a href="trangchu.html" class="active">Trang Chủ</a></li> 
+                   <li><a href="gioithieu.html">Giới Thiệu</a></li> 
+                   <li><a href="sanpham.html">Sản Phẩm</a></li> 
+                   <li><a href="chinhsach.html">Chính Sách</a></li> 
+                   <li><a href="giohang.html">Giỏ Hàng</a></li> 
+                </ul>
+            </nav>
+            
+            <div class="login">
+                <a href="login.html">
+                    <i class='bx bxs-user'></i>
+                </a>
+
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <i class='bx bx-left-arrow-alt' onclick="fNext();"></i>
+        <img id="mySlide" src="images/slide5.jpg" width="auto">
+        <i class='bx bx-right-arrow-alt' onclick="fNext();"></i>
+    </div>
+
+    <div id="slide">
+
+    </div>
+
+    <!-- <div class="product">
+        <h3 class="heading">Sách Bán Chạy</h3>
+        <div class="list-product">
+            <div class="product-items">
+                <img src="images/book1.webp">
+                <p>Đắc Nhân Tâm</p>
+                <b>59.000 đ̲</b>
+            </div>
+            <div class="product-items">
+                <img src="images/book2.webp">
+                <p>Nghĩ Giàu Làm Giàu</p>
+                <b>78.000 đ̲</b>
+            </div>
+            <div class="product-items">
+                <img src="images/book3.webp">
+                <p>Người Giàu Có Nhất Thành Babylon</p>
+                <b>69.000 đ̲</b>
+            </div>
+            <div class="product-items">
+                <img src="images/book4.webp">
+                <p>Đừng Lựa Chọn An Nhàn Khi Còn Trẻ</p>
+                <b>70.000 đ̲</b>
+            </div>
+            <div class="product-items">
+                <img src="images/book5.webp">
+                <p>90-20-30 Bài Học Vỡ Lòng<br>Về Ý Tưởng Và Câu Chữ</p>
+                <b>158.000 đ̲</b>
+            </div>
+            <div class="product-items">
+                <img src="images/book6.webp">
+                <p>Tâm Lý Học Tội Phạm</p>
+                <b>98.400 đ̲</b>
+            </div>
+            <div class="product-items">
+                <img src="images/book7.webp">
+                <p>Rèn Luyện Tư Duy Phản Biện</p>
+                <b>62.900 đ̲</b>
+            </div>
+            <div class="product-items">
+                <img src="images/book8.webp">
+                <p>Nhà Giả Kim</p>
+                <b>54.500 đ̲</b>
+            </div>
+            <div class="product-items">
+                <img src="images/book9.webp">
+                <p>Thiên Tài Bên Trái Kẻ Điên Bên Phải</p>
+                <b>121.500 đ̲</b>
+            </div>
+            <div class="product-items">
+                <img src="images/book10.webp">
+                <p>Chủ Nghĩa Khắc Kỷ</p>
+                <b>81.250 đ̲</b>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="wrapper">
+        <div class="headline">
+            <h3>Sản Phẩm Bán Chạy</h3>
+        </div>
+            <ul class="products">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class="product-thump">
+                                <img src="images/book1.webp" alt="">
+                            </a>
+                            <a href="chitietsanpham.html" class="buy-now">Mua Ngay</a>
+                            <!--Mua Ngay-->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Đắc Nhân Tâm</a>
+                            <div class="product-price">200.000 VND</div>
+                        </div> 
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class="product-thump">
+                                <img src="images/book2.webp" alt="">
+                            </a>
+                            <a href="chitietsanpham2.html" class="buy-now">Mua Ngay</a>
+                            <!--Mua Ngay-->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Nghĩ Giàu Làm Giàu</a>
+                            <div class="product-price">250.000 VND</div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class="product-thump">
+                                <img src="images/book3.webp" alt="">
+                            </a>
+                            <a href="" class="buy-now">Mua Ngay</a>
+                            <!--Mua Ngay-->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Richest Babylon</a>
+                            <div class="product-price">90.000 VND</div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class="product-thump">
+                                <img src="images/book4.webp" alt="">
+                            </a>
+                            <a href="" class="buy-now">Mua Ngay</a>
+                            <!--Mua Ngay-->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Đừng Lựa Chọn An Nhàn</a>
+                            <div class="product-price">100.000 VND</div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class="product-thump">
+                                <img src="images/book5.webp" alt="">
+                            </a>
+                            <a href="" class="buy-now">Mua Ngay</a>
+                            <!--Mua Ngay-->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">90-20-30</a>
+                            <div class="product-price">110.000 VND</div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class="product-thump">
+                                <img src="images/book6.webp" alt="">
+                            </a>
+                            <a href="" class="buy-now">Mua Ngay</a>
+                            <!--Mua Ngay-->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Tâm Lý Học Tội Phạm</a>
+                            <div class="product-price">180.000 VND</div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class="product-thump">
+                                <img src="images/book7.webp" alt="">
+                            </a>
+                            <a href="" class="buy-now">Mua Ngay</a>
+                            <!--Mua Ngay-->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Tư Duy Phản Biện</a>
+                            <div class="product-price">200.000 VND</div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class="product-thump">
+                                <img src="images/book8.webp" alt="">
+                            </a>
+                            <a href="" class="buy-now">Mua Ngay</a>
+                            <!--Mua Ngay-->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Nhà Giả Kim</a>
+                            <div class="product-price">150.000 VND</div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class="product-thump">
+                                <img src="images/book9.webp" alt="">
+                            </a>
+                            <a href="" class="buy-now">Mua Ngay</a>
+                            <!--Mua Ngay-->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Thiên Tài Bên Trái Kẻ Điên Bên Phải</a>
+                            <div class="product-price">220.000 VND</div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class="product-thump">
+                                <img src="images/book10.webp" alt="">
+                            </a>
+                            <a href="" class="buy-now">Mua Ngay</a>
+                            <!--Mua Ngay-->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Chủ Nghĩa Khắc Kỷ</a>
+                            <div class="product-price">180.000 VND</div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class="product-thump">
+                                <img src="images/book11.webp" alt="">
+                            </a>
+                            <a href="" class="buy-now">Mua Ngay</a>
+                            <!--Mua Ngay-->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Tâm Lý Học Về Tiền</a>
+                            <div class="product-price">210.000 VND</div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class="product-thump">
+                                <img src="images/book12.webp" alt="">
+                            </a>
+                            <a href="" class="buy-now">Mua Ngay</a>
+                            <!--Mua Ngay-->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Kỷ Luật Tự Do</a>
+                            <div class="product-price">200.000 VND</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+    </div>
+    
+
+    <div class="tintuc">
+        <h3 class="heading"> Tin Tức Mới Nhất</h3>
+        <div class="list-new">
+
+            <div class="new-item">
+                <img src="images/tintuc2.webp">
+                <h3>Không Bao Giờ Là Thất Bại Tất Cả Là Thử Thách</h3>
+                <p>
+                    Thất bại xảy ra là để con người nhận ra sức mạnh nội tại của bản thân, bởi không ai sống mà chỉ trải
+                    qua những thành công trong suốt cuộc đời. Tuy vậy, ta vẫn luôn băn khoăn tự hỏi bản thân rằng bao
+                    nhiêu lần thất bại mới đủ để thành công?
+                </p>
+            </div>
+
+            <div class="new-item">
+                <img src="images/tintuc3.webp">
+                <h3>Keanu Ma Trận Cuộc Đời</h3>
+                <p>
+                    Keanu thường được mọi người nhìn nhận như một người hùng, cả trên màn ảnh lẫn ngoài đời thực. Ở anh,
+                    chúng ta có thể nhìn thấy sự tận tụy, tử tế, cao thượng và gần gũi. Tuy nhiên, Keanu từng chia sẻ:
+                    “Hầu hết mọi người đều biết tôi. Nhưng họ không biết câu chuyện của tôi”.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="backtotop">
+        <a href="trangchu.html">
+            <i class='bx bx-chevrons-up'></i>
+        </a>
+    </div>
+    <footer>
+        <div class="about footer-item">
+            <h3>Giới Thiệu</h3>
+            <p> Nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng
+                cũng như tất cả Hệ Thống trên toàn quốc.</p>
+        </div>
+
+        <div class="link footer-item">
+            <h3>Liên Kết</h3>
+            <a href="">Trang Chủ</a>
+            <a href="">Giới Thiệu</a>
+            <a href="">Chính Sách Đổi Trả</a>
+        </div>
+
+        <div class="contact footer-item">
+            <h3>Thông Tin Liên Hệ</h3>
+            <p><i class='bx bx-map'></i> TP.HCM</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4493.607629619938!2d106.62689005425823!3d10.854182765982255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1645145974703!5m2!1svi!2s"
+                width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <p><i class='bx bx-phone-call'></i> 0946255177</p>
+            <p><i class='bx bxl-gmail'></i> thuanlmps21911@fpt.edu.vn</p>
+        </div>
+    </footer>
+
+    <div class="tacgia">
+        <hr>
+        <p>Copyright © 2022 .All rights reserved by Website. Designed by Minh Thuan</p>
+    </div>
+
+</body>
+
+</html>
+<script src="slide.js"></script>
